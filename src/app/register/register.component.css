@@ -1,3 +1,12 @@
+/*
+* File: register.component.css
+* Author: Szivák Gergő
+* Copyright: 2022, Szivák Gergő
+* Group: Szoft II/N
+* Date: 2022-02-24
+* Github: https://github.com/gergosz-2000/angjarat
+* Licenc: GNU GPL
+*/
 input.ng-invalid {
     border-style: solid;
     border-width: 3px;
