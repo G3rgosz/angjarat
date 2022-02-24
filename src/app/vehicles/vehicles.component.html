@@ -1,0 +1,39 @@
+<h2>Új jármű</h2>
+<form [formGroup]="newvehicleForm" (ngSubmit)="newvehicle()">
+    <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">rendszám</label>
+          <input type="text" class="form-control" 
+          id="exampleInputEmail1" aria-describedby="emailHelp"
+          formControlName="plate">
+    </div>
+    <div class="mb-3">            
+          <label for="exampleInputPassword1" class="form-label">márka</label>
+          <input type="text" class="form-control" 
+          id="exampleInputPassword1"
+          formControlName="brand">
+    </div>
+    <div class="mb-3">            
+          <label for="exampleInputPassword2" class="form-label">év</label>
+          <input type="text" class="form-control" 
+          id="exampleInputPassword2"
+          formControlName="year">
+    </div>
+    <div class="mb-3">            
+          <label for="exampleInputPassword3" class="form-label">ár</label>
+          <input type="text" class="form-control" 
+          id="exampleInputPassword3"
+          formControlName="price">
+    </div>
+    <div class="mb-3">            
+          <label for="exampleInputPassword4" class="form-label">eladva</label>
+          <input type="text" class="form-control" 
+          id="exampleInputPassword4"
+          formControlName="sold">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Hozzáad</button>
+</form>
+
+<button (click)="logout()" class="btn btn-success">Kijelentkezés</button>
+
+
