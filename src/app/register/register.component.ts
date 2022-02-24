@@ -1,3 +1,12 @@
+/*
+* File: register.component.ts
+* Author: Szivák Gergő
+* Copyright: 2022, Szivák Gergő
+* Group: Szoft II/N
+* Date: 2022-02-24
+* Github: https://github.com/gergosz-2000/angjarat
+* Licenc: GNU GPL
+*/
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators  } from '@angular/forms';
 import { Router } from '@angular/router';
