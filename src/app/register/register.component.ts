@@ -44,7 +44,6 @@ export class RegisterComponent implements OnInit {
     .subscribe(res => {
       console.log(res);
       if (res.token != 0) {
-        // console.log(res.success);
         alert("Sikeres regisztráció!");
         localStorage.setItem('currentUser', 
         JSON.stringify({token: res.token, name: res.name})

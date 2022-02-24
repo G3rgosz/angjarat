@@ -19,7 +19,7 @@ export class VehiclesService {
   getVehicles(){
     let endpoint = 'vehicles';
     let url = this.host + endpoint;
-    console.log(this.http.get<any>(url))
+    return this.http.get<any>(url);
   }
   postVehicles(plate: string, brand: string, year: string, price: string, sold: string){
     let vData = {
@@ -32,7 +32,6 @@ export class VehiclesService {
     let data = JSON.stringify(vData);
 
     let udata:any = localStorage.getItem('currentUser');
-    localStorage.removeItem('currentUser');
     let currentUser = JSON.parse(udata);
     let token = currentUser.token;
 

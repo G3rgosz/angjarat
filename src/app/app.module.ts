@@ -17,7 +17,7 @@ import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { VehiclesComponent } from './vehicles/vehicles.component';
-import { VehiclestableComponent } from './vehiclestable/vehiclestable.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { VehiclestableComponent } from './vehiclestable/vehiclestable.component'
     LoginComponent,
     RegisterComponent,
     VehiclesComponent,
-    VehiclestableComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
